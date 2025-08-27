@@ -1,0 +1,22 @@
+// Code to print all the divisors/factors of the given number
+#include <stdio.h>
+
+int main() {
+    
+    int n,i ;
+    
+    printf("Enter number\n");
+    scanf("%d",&n);
+
+for(i=1;i<n;i++)  // IMP : START I=1 otherwise n%i => n%0 ==> gives error ( floating point exception)
+{
+    if(n%i==0){
+        printf("%d,\t",i);
+    }
+    else {
+        printf("");
+    }
+}
+
+    return 0;
+}
