@@ -7,10 +7,10 @@ int main() {
     scanf("%d", &num);
 
     while (num != 0) {
-        int digit = num % 10;
-        reversed = reversed * 10 + digit;
-        printf("%d",reversed);
-        num /= 10;
+        int digit = num % 10; // To isolate the unit's place digit : eg 938%10 => 8
+        reversed = reversed * 10 + digit; // To shift the digit to left ' eg : 8*10+3 =83
+        printf("%d",reversed); 
+        num /= 10; // To chop off the last digit : eg. 938-> 938/10 => 93
     }
 
     printf("Reversed number: %d\n", reversed);
