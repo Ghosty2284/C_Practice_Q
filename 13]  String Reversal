@@ -1,0 +1,23 @@
+
+#include <stdio.h>
+#include<string.h>
+
+int main() {
+  int n=10000;
+   char a[n];
+   printf("Enter String:\n");
+   scanf("%s",a);
+   
+   n=strlen(a);
+   char b[n];
+   int i;
+   for(i=0;i<n;i++){
+       b[i]=a[n-1-i];
+   }
+   b[n]='\0'; // to terminate b
+   
+ printf("%s",b); 
+
+
+    return 0;
+}
